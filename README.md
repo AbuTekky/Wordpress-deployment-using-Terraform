@@ -194,9 +194,10 @@ variable "instance_count" {
 
 ## Step 6: Define the Main Terraform Configuration in 'main.tf'
 
+### `main.tf`
+
 Purpose: This file defines the AWS infrastructure resources.
 
-### `main.tf`
 This file contains the primary infrastructure definition. It includes resources like VPCs, subnets, security groups, and EC2 instances. This file also includes a bash script to automate installing and running Nginx, PHP, MariaDB. So when the EC2 gets initilaised, the bash script should run and host Wordpress on the EC2 instance.
 
 ```
@@ -393,6 +394,7 @@ resource "aws_instance" "amir_wordpress_instance" {
 
 ## Step 7: Define Outputs in 'outputs.tf'
 
+### `outputs.tf`
 Purpose: The output block in Terraform is used to display certain values after the infrastructure has been created or updated. In this specific case, the output "wordpress_public_ips" block is configured to display the public IP addresses of the EC2 instances running WordPress.
 
 ```
