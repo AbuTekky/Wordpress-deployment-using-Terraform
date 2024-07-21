@@ -151,6 +151,8 @@ key_name = "coderco-dev"
 
 ## Step 5: Define Variabels in 'variables.tf'
 
+### `variables.tf`
+
 Purpose: Variables allow you to parameterise your Terraform configuration.
 
 ```
