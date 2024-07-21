@@ -376,7 +376,7 @@ resource "aws_instance" "amir_wordpress_instance" {
     sudo bash -c 'cat <<EOT > /etc/nginx/conf.d/wordpress.conf
     server {
         listen 80;
-        server_name 3.8.22.187; # Replace with your public EC2 IP or domain
+        server_name 13.40.51.137; # Replace with your public EC2 IP or domain
         root /var/www/html;
         index index.php index.html index.htm;
         location / {
