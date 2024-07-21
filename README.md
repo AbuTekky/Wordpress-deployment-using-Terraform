@@ -4,11 +4,29 @@
   <img src="https://img.shields.io/badge/Terraform-844FBA?logo=terraform&logoColor=fff&style=plastic) alt="
   WordPress on AWS" width="200">
   <br>
-  Deploying WordPress on AWS with Terraform
+  🌐 Deploying WordPress on AWS with Terraform 🚀
   <br>
 </h1>
 
-## Introduction
+## Table of Contents 📚
+ - [Introduction](#introduction)
+ - [Prerequisites](#prerequisites)
+ - [Project Structure](#project-structure)
+ - [Why is Infrastructure as Code (IaC) So Important?](#why-is-infrastructure-as-code-iac-so-important)
+ - [Step 1: Install Terraform](#step-1-install-terraform)
+ - [Step 2: Create Terraform Configuration Files](#step-2-create-terraform-configuration-files)
+ - [Step 3: Create an SSH Key Pair if you haven't already](#step-3-create-an-ssh-key-pair-if-you-havent-already)
+ - [Step 4: Define the Key Pair in Terraform](#step-4-define-the-key-pair-in-terraform)
+ - [Step 5: Define Variables in `variables.tf`](#step-5-define-variables-in-variables.tf)
+ - [Step 6: Define the Main Terraform Configuration in `main.tf`](#step-6-define-the-main-terraform-configuration-in-main.tf)
+ - [Step 7: Define Outputs in `outputs.tf`](#step-7-define-outputs-in-outputs.tf)
+ - [Step 8: Initialize, Plan, and Apply Terraform Configuration](#step-8-initialize-plan-and-apply-terraform-configuration)
+ - [Step 9: Check the Log to See if the Services Required to Run WordPress Installed Without Any Errors](#step-9-check-the-log-to-see-if-the-services-required-to-run-wordpress-installed-without-any-errors)
+ - [Step 10: Creating a Bash Script Within the Terminal of the EC2 to Work Around This](#step-10-creating-a-bash-script-within-the-terminal-of-the-ec2-to-work-around-this)
+ - [Step 11: Configuring WordPress](#step-11-configuring-wordpress)
+ - [Summary](#summary)
+
+## Introduction 🌟
 
 Welcome to the "WordPress on AWS with Terraform" project! This guide helps you automate the deployment of a WordPress site on AWS using Terraform. By the end, you'll have a fully functional WordPress site on an EC2 instance.
 
@@ -35,14 +53,13 @@ Welcome to the "WordPress on AWS with Terraform" project! This guide helps you a
 
 10. **User Data Script:** Automates the installation and configuration of WordPress, Nginx, PHP, and MariaDB.
 
-## Prerequisites
+## Prerequisites ✅
 
 Before starting this project, I had the following prepared:
 
 - **AWS Account:** An active AWS account to deploy resources.
 - **Terraform Installed:** Terraform installed on my local machine and declared in the system's PATH variable for easy access.
-- **Visual Studio Code:** Used as the code editor to write and manage my Terraform configuration files.
-- **Git Bash:** Utilised for running SSH commands and managing instances.
+- **Visual Studio Code:** Used as the code editor to write and manage my Terraform configuration files, and used to Utilise for running SSH commands and managing instances.
 - **SSH Key Pair:** Created in the AWS Management Console for accessing my EC2 instances.
 
 > [!TIP]
