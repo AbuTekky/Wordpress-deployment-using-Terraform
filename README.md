@@ -194,7 +194,7 @@ variable "instance_count" {
 }
 ```
 
-## Step 6: Define the Main Terraform Configuration in 'main.tf'
+## Step 6: Define the Main Terraform Configuration in 'main.tf' (this tf file has a bashscript included to automate the installation of Nginx, PHP, MariaDB and Wordpress, this will execute once the EC2 is deployed)
 
 ### `main.tf`
 
