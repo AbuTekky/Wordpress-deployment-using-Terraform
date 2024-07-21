@@ -134,7 +134,7 @@ Instructions:
 For example when I connected to my EC2 instance via ssh, I did:
 ssh -i "C:\Users\ALIAM1\Desktop\CoderCo stuff\Keys\coderco-dev.pem" ec2-user@3.8.22.187   
 
-![alt text](Wordpress-deployment-using-Terraform/images/ssh.PNG)
+![alt text](images/ssh.PNG)
 
 ## Step 4: Define the Key Pair in Terraform
 
@@ -440,7 +440,7 @@ terraform init
 ```
 - terraform init: Prepares the working directory for use with Terraform.
 
-![alt text](Wordpress-deployment-using-Terraform/images/terraforminit.PNG)
+![alt text](images/terraforminit.PNG)
 
 
 2. Plan the Deployment
@@ -450,14 +450,14 @@ terraform plan
 ```
 - terraform plan: Creates an execution plan, showing what actions will be taken.
 
-![Wordpress-deployment-using-Terraform/images/terraformplan.PNG](Wordpress-deployment-using-Terraform/images/terraformplan.PNG)
+![alt text](images/terraformplan.PNG)
 
 
 3. Apply the Configuration
 ```
 terraform apply
 ```
-![alt text](Wordpress-deployment-using-Terraform/images/terraformapply.PNG)
+![alt text](images/terraformapply.PNG)
 
 - terraform apply:  Executes the actions proposed in the plan to create the resources.
 
@@ -473,7 +473,7 @@ The command sudo cat /var/log/cloud-init-output.log does the following:
 - /var/log/cloud-init-output.log: Specifies the file to be read and displayed. This is a log file created by the cloud-init service.
 
 
-![alt text](Wordpress-deployment-using-Terraform/images/Nginxdidnotinstallfrombashscript.PNG)
+![alt text](images/Nginxdidnotinstallfrombashscript.PNG)
 
 ## Step 10: Creating a bash script within the terminal of the EC2 to workaround this.
 
@@ -506,14 +506,14 @@ sudo chmod +x nginx.sh
 ```
 ## Final result of the workaround bash script, ensuring the service is installed, enabled and started
 
-![alt text](Wordpress-deployment-using-Terraform/images/workaround.PNG)
+![alt text](images/workaround.PNG)
 
 
 ## Step 11: Configuring WordPress
 
 As you can see now, I have now installed Wordpress on the EC2 configured with Terraform
 
-![alt text](Wordpress-deployment-using-Terraform/images/SuccessTFWordpress.PNG)
+![alt text](images/SuccessTFWordpress.PNG)
 
 
 ## Summary: 
