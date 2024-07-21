@@ -140,8 +140,6 @@ terraform-project/
 
 ## Step 3: Create an SSH Key Pair if you haven't already.
 
-Instructions:
-
 1. Go to the AWS Management Console
 2. Navigate to EC2 > Key Pairs.
 3. Create a new key pair and download the .pem file to a safe location
